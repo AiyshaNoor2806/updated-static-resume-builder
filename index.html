@@ -72,13 +72,28 @@
         button:hover {
             background-color: #2980b9;
         }
+        #generatedResume {
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #bdc3c7;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        #generatedResume h2 {
+            color: #2c3e50;
+            font-size: 24px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
 
     <h1>Resume Builder by Aiysha Noor</h1>
 
-    <form>
+    <form id="resumeForm">
         <fieldset>
             <legend>Personal Information</legend>
             <label for="name">Name:</label>
@@ -112,5 +127,10 @@
         <button type="submit">Generate Resume</button>
     </form>
 
+    <!-- Section where the generated resume will appear -->
+    <section id="generatedResume"></section>
+
+    <!-- Link the compiled JavaScript file from TypeScript -->
+    <script src="script.js"></script>
 </body>
 </html>
